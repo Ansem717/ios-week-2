@@ -8,15 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
+class HomeViewController: UIViewController {
     
     var tweetData = [Tweet]() {
         didSet {
             //
         }
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +29,11 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    func setupTableView()
+    {
+        self.tableView.tweetData = self
+    }
+    
     func update()
     {
         JSONParser.tweetJSONFrom(JSONParser.JSONData()) { (success, tweets) -> () in
@@ -41,6 +44,34 @@ class ViewController: UIViewController {
             }
         }
     }
-    
 }
+
+extension HomeViewController
+{
+    func configureCellForIndexPath(indexPath: NSIndexPath) -> UITableViewCell
+    {
+        
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        self.tweetData.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
+        return self.configureCellForIndexPath(indexPath)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
