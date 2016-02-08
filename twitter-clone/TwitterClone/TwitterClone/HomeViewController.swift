@@ -50,7 +50,7 @@ extension HomeViewController
 {
     func configureCellForIndexPath(indexPath: NSIndexPath) -> UITableViewCell
     {
-        
+        //MARK: Something is missing
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int

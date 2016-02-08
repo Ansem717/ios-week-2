@@ -13,9 +13,9 @@
 		E98A890F1C690F6A002BF4AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E98A890E1C690F6A002BF4AC /* Assets.xcassets */; };
 		E98A89121C690F6A002BF4AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98A89101C690F6A002BF4AC /* LaunchScreen.storyboard */; };
 		E98A891E1C6913FE002BF4AC /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A891D1C6913FE002BF4AC /* JSONParser.swift */; };
-		E98A89211C69158B002BF4AC /* tweet.json in Resources */ = {isa = PBXBuildFile; fileRef = E98A89201C69158B002BF4AC /* tweet.json */; };
 		E98A89231C691640002BF4AC /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A89221C691640002BF4AC /* Tweet.swift */; };
 		E98A89261C69168E002BF4AC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A89251C69168E002BF4AC /* User.swift */; };
+		E98A89281C692B82002BF4AC /* tweet.json in Resources */ = {isa = PBXBuildFile; fileRef = E98A89271C692B82002BF4AC /* tweet.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +27,9 @@
 		E98A89111C690F6A002BF4AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E98A89131C690F6A002BF4AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E98A891D1C6913FE002BF4AC /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
-		E98A89201C69158B002BF4AC /* tweet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tweet.json; sourceTree = "<group>"; };
 		E98A89221C691640002BF4AC /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		E98A89251C69168E002BF4AC /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E98A89271C692B82002BF4AC /* tweet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tweet.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 		E98A891C1C6913C1002BF4AC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E98A89201C69158B002BF4AC /* tweet.json */,
+				E98A89271C692B82002BF4AC /* tweet.json */,
 			);
 			name = "Supporting Files";
 			path = ..;
@@ -186,7 +186,7 @@
 				E98A89121C690F6A002BF4AC /* LaunchScreen.storyboard in Resources */,
 				E98A890F1C690F6A002BF4AC /* Assets.xcassets in Resources */,
 				E98A890D1C690F6A002BF4AC /* Main.storyboard in Resources */,
-				E98A89211C69158B002BF4AC /* tweet.json in Resources */,
+				E98A89281C692B82002BF4AC /* tweet.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
