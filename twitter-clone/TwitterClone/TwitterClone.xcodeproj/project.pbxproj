@@ -12,6 +12,10 @@
 		E98A890D1C690F6A002BF4AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98A890B1C690F6A002BF4AC /* Main.storyboard */; };
 		E98A890F1C690F6A002BF4AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E98A890E1C690F6A002BF4AC /* Assets.xcassets */; };
 		E98A89121C690F6A002BF4AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98A89101C690F6A002BF4AC /* LaunchScreen.storyboard */; };
+		E98A891E1C6913FE002BF4AC /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A891D1C6913FE002BF4AC /* JSONParser.swift */; };
+		E98A89211C69158B002BF4AC /* tweet.json in Resources */ = {isa = PBXBuildFile; fileRef = E98A89201C69158B002BF4AC /* tweet.json */; };
+		E98A89231C691640002BF4AC /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A89221C691640002BF4AC /* Tweet.swift */; };
+		E98A89261C69168E002BF4AC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A89251C69168E002BF4AC /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		E98A890E1C690F6A002BF4AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E98A89111C690F6A002BF4AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E98A89131C690F6A002BF4AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E98A891D1C6913FE002BF4AC /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		E98A89201C69158B002BF4AC /* tweet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tweet.json; sourceTree = "<group>"; };
+		E98A89221C691640002BF4AC /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		E98A89251C69168E002BF4AC /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,9 @@
 			children = (
 				E98A891A1C691215002BF4AC /* App Global */,
 				E98A891B1C69121F002BF4AC /* Controller */,
+				E98A89241C691644002BF4AC /* Model */,
+				E98A891C1C6913C1002BF4AC /* Supporting Files */,
+				E98A891F1C691404002BF4AC /* Utilities */,
 				E98A89191C691209002BF4AC /* View */,
 			);
 			path = TwitterClone;
@@ -86,6 +97,32 @@
 				E98A89091C690F6A002BF4AC /* HomeViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		E98A891C1C6913C1002BF4AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E98A89201C69158B002BF4AC /* tweet.json */,
+			);
+			name = "Supporting Files";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E98A891F1C691404002BF4AC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E98A891D1C6913FE002BF4AC /* JSONParser.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		E98A89241C691644002BF4AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E98A89221C691640002BF4AC /* Tweet.swift */,
+				E98A89251C69168E002BF4AC /* User.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +186,7 @@
 				E98A89121C690F6A002BF4AC /* LaunchScreen.storyboard in Resources */,
 				E98A890F1C690F6A002BF4AC /* Assets.xcassets in Resources */,
 				E98A890D1C690F6A002BF4AC /* Main.storyboard in Resources */,
+				E98A89211C69158B002BF4AC /* tweet.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +199,9 @@
 			files = (
 				E98A890A1C690F6A002BF4AC /* HomeViewController.swift in Sources */,
 				E98A89081C690F6A002BF4AC /* AppDelegate.swift in Sources */,
+				E98A891E1C6913FE002BF4AC /* JSONParser.swift in Sources */,
+				E98A89261C69168E002BF4AC /* User.swift in Sources */,
+				E98A89231C691640002BF4AC /* Tweet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

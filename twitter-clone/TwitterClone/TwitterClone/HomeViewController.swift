@@ -9,17 +9,38 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    var tweetData = [Tweet]() {
+        didSet {
+            //
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        super.viewWillAppear(animated)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
+    
+    func update()
+    {
+        JSONParser.tweetJSONFrom(JSONParser.JSONData()) { (success, tweets) -> () in
+            if success {
+                if let tweets = tweets {
+                    self.tweetData = tweets
+                }
+            }
+        }
+    }
+    
 }
 
